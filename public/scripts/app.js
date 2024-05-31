@@ -1,23 +1,45 @@
-let informacoesCadastro = []
-
+let usuario = []
+let senha = []
 
 function realizarCadastro(){
-    let usuario = document.getElementById('usuario').value
-    let senha = document.getElementById('senha').value
+    
+    let novoUsuario = document.getElementById('usuario').value
+    let novaSenha = document.getElementById('senha').value
 
-    informacoesCadastro.push(usuario,senha)
+    usuario.push(novoUsuario)
+    senha.push(novaSenha)
 
-    alert('Cadastro realizado com sucesso')
+    alert('Cadastro realizado com sucesso') 
+    alert(`Nome de Usuario: ${usuario}`)
+    alert(`Senha: ${senha}`)
+
+    localStorage.setItem('Usuario',novoUsuario)
+    localStorage.setItem('Senha', novaSenha)
 
     document.getElementById('usuario').value = ''
     document.getElementById('senha').value = ''
 
-    location.href='../index.html'
+    location.href = '../index.html';
 }
 
-document.getElementById('cadastro').addEventListener('submit', function(evento) {
-    evento.preventDefault(); 
-    realizarCadastro(); 
-});
+
+function verificarLogin(){
+    let nomeDoUsuario = document.getElementById('usuarioLogin').value
+    let senhaDoUsuario = document.getElementById('senhaLogin').value
+
+    const usuarioRegistrado = localStorage.getItem('Usuario')
+    const senhaRegistrada = localStorage.getItem('Senha')
+
+    if (nomeDoUsuario == usuarioRegistrado && senhaDoUsuario == senhaRegistrada){
+        alert('Login efetuado com sucesso')
+        document.getElementById('usuarioLogin').value = ''
+        document.getElementById('senhaLogin').value = ''
+        location.href = '../index.html'
+    }else{
+        alert('Nome de usuario ou senha incorretos. Tente novamente')
+    } 
+}
+
+
 
 

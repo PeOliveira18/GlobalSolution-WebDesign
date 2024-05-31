@@ -53,7 +53,7 @@ body{
     color: white;
 }
 
-.espaco-salvar{
+.espaco-salvar, .espaco-entrar{
     display: flex;
     flex-direction: column;
     background-color: rgb(45, 112, 184);
@@ -61,7 +61,7 @@ body{
     margin: 10px 0;
 }
 
-#btnSalvar{
+#btnSalvar, #btnEntrar{
     background-color: rgb(45, 112, 184);
     border: none;
     color:rgb(225, 225, 225);
@@ -69,7 +69,7 @@ body{
     cursor: pointer;
 }
 
-#btnSalvar:hover{
+#btnSalvar:hover, #btnEntrar:hover{
     opacity: 50%;
 }
 

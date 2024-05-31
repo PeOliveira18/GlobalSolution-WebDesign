@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro-login.css">
+    <title>Pagina de Login</title>
+</head>
+<body>
+    <div class="container">
+        <form class="espaco-cadastro" id="cadastro">
+            <div class="titulo">
+                <h2>Login</h2>
+            </div>
+            <div class="espaco-pai">
+                <div class="espaco-credenciais">
+                    <input type="text" placeholder="Nome de Usuario"  id="usuarioLogin" autocomplete="username" required>
+                </div>
+                <div class="espaco-credenciais">
+                    <input type="password" placeholder="Senha" id="senhaLogin" autocomplete="current-password" required>
+                </div>
+            </div>
+            <div class="espaco-entrar">
+                <input type="submit" value="Entrar" id="btnEntrar" onclick="verificarLogin()">
+            </div>
+        </form>
+    </div>
+
+    <script src="/public/scripts/app.js"></script>
+</body>
+</html>
