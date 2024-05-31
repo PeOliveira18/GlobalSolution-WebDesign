@@ -1,0 +1,406 @@
+body{
+    background-image: linear-gradient(to right, #01C4D8, #016599);
+    overflow-x: hidden;
+}
+
+header{
+    max-width: 1200px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+body ul{
+    list-style: none;
+    font-size: 18px;
+    font-family:  "Lato", sans-serif;
+    color: #202A4E;
+}
+
+body h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-size: 25px;
+}
+
+body p{
+    font-family: "Lato", sans-serif;
+}
+
+body a{
+    text-decoration: none;
+}
+
+
+nav img{
+    margin-top: -2px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+nav{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 15px;
+    margin-left: 20px;  
+}
+
+nav a{
+    text-decoration: none;
+    color: #202A4E;
+    font-weight: bold;
+    list-style: none;
+    transition: all 0.5s;
+    margin-left: 30px;
+}
+
+a:hover{
+    color: white;
+}
+
+nav a:active{
+    opacity: 50%;
+}
+
+nav h1{
+    color: #202A4E;
+    margin-left: 10px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 70px;
+    font-size: 15px;
+}
+
+.icones img:hover{
+    opacity: 70%;
+}
+
+
+.linha{
+    border-left: 1px solid #202A4E;
+    height: 30px;
+}
+
+.btn-login{
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #202A4E;
+    transition: all 0.3s;
+}
+
+.btn{
+    text-decoration: none;
+    color: #202A4E;
+    border: 1px solid black;
+    background-color: #087DDC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+
+.btn-login:hover{
+    background-color: rgb(189, 184, 184);
+    color: #087DDC;
+}
+
+.btn:hover{
+    background-color: rgb(189, 184, 184);
+    color: #087DDC;
+}
+
+.btn-login:active{
+    opacity: 50%;
+
+}
+.btn:active{
+    opacity: 50%;
+}
+
+.icones{
+    margin-top: 15px;
+    margin-right: 100px;
+}
+.icones img{
+    width: 30px;
+}
+
+.problema{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problema h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-weight: bolder;
+}
+
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.imagens img{
+    width: 500px;
+    max-width: 320px;
+    max-height: 300px;
+}
+
+
+.problema{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.problema h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #202A4E;
+    font-weight: bolder;
+}
+
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.imagens img{
+    width: 500px;
+    max-width: 320px;
+    max-height: 300px;
+}
+
+
+figure:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+figure{
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+}
+
+figcaption{
+    background-color: white;
+    color: #202A4E;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.conteudo-objetivos-beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.objetivos {
+    margin-left: 15px;
+}
+
+.beneficios {
+    display: flex;
+    align-items: center; 
+}
+
+.icone-direita {
+    position: absolute;
+    left: 45%;
+    margin-top: -15px;
+    
+    
+}
+
+.icone-direita img{
+    width: 150px;
+}
+
+
+.texto-beneficios {
+    margin-right: 15px;
+}
+
+.publico{
+    margin-top: 20px;
+}
+
+.titulo-publico{
+    display: flex;
+    justify-content: center;
+    color: #202A4E;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.personas img{
+    height: 300px;
+    width: 300px;
+}
+
+.descricao-persona{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.personas img:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.impacto-dia {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blocos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.bloco {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+.texto {
+    text-align: left;
+}
+
+.texto h3 {
+    color: #087DDC;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    margin-top: 5px;
+}
+
+footer{
+    background-color: #202a4ee5;
+    height: 500px;
+    color: white;
+}
+
+footer h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+footer a{
+    color: white;        
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#btn-doacao {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #087ddc77;
+    transition: all 0.3s;
+    width: 150px;
+}
+
+#btn-doacao:hover {
+    background-color: rgba(224, 217, 217, 0.644);
+    color: #087DDC;
+}
+
+#btn-doacao:active {
+    opacity: 50%;
+}
+
+.formas-doacao img{
+    width: 40px;
+}
+
+.linha2{
+    border: 1px solid black;
+}
+
+footer{
+    height: 280px;
+}
+
+.politicas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.politicas p, .politicas a, .finalizacao p{
+    font-size: 15px;
+}
+
+.finalizacao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+
+

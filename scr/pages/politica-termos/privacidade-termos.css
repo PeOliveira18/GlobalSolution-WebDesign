@@ -1,0 +1,85 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1{
+    text-align: center;
+}
+
+body li{
+    text-decoration: none;
+    color: black;
+}
+
+body a{
+    text-decoration: none;
+}
+
+.politicas, .termos{
+    display: flex;
+    justify-content: center;   
+}
+
+.container{   
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitulo p{
+    text-align: justify;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.forma{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aviso{
+    font-size: 18px;
+}
+
+.contrato{
+    font-weight: bold;
+}
+
+.link{
+    color: black;
+    text-decoration: underline;
+}
+
+.voltar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.voltar a{
+    color: black;
+    background-color: rgba(184, 176, 176, 0.637);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.voltar a:hover{
+    opacity: 70%;;
+}
+
+.voltar a:active{
+    background-color: white;
+}
