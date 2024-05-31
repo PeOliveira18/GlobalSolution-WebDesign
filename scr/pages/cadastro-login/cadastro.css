@@ -1,0 +1,79 @@
+body{
+    background-color: #1D3357;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.espaco-cadastro{
+    background-color: rgba(14, 13, 13, 0.3);
+    padding: 40px;
+    border-radius: 5px;
+    width:300px;
+}
+
+.titulo{
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255, 0.8);   
+}
+
+.titulo::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    display: flex;
+    margin-top: -17px;
+}
+
+.espaco-pai label {
+    color: rgb(255, 255, 255,0.8);
+    font-size: 12px;
+}
+
+.espaco-credenciais {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+
+}
+
+.espaco-credenciais input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;    
+    border-bottom: 1px solid rgb(225, 225, 225);
+    color: white;
+}
+
+.espaco-salvar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(45, 112, 184);
+    border: none;
+    margin: 10px 0;
+}
+
+#btnSalvar{
+    background-color: rgb(45, 112, 184);
+    border: none;
+    color:rgb(225, 225, 225);
+    margin: 10px;
+    cursor: pointer;
+}
+
+#btnSalvar:hover{
+    opacity: 50%;
+}
+
+
+
+
+
