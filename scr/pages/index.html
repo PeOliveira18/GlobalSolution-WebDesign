@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <nav>
-                <img src="/public/images/oc20-logo.png" alt="Logo OC20" class="img-logo">
+                <img src="/public/images/logo.png" alt="Logo OC20" class="img-logo">
                 <ul>
                     <li><a href="#problemas" onclick="trocaClasse('problemas')">Problema</a></li>
                     <li><a href="#tecnologias" onclick="trocaClasse('tecnologias')">Tecnologias</a></li>
@@ -92,14 +92,10 @@
             <div class="titulo-publico">
                 <h2>Impactos na vida de pessoas</h2>
             </div>
-            <div class="personas">               
-                <img src="/public/images/persona-1.png" alt="Foto de uma pessoa afetada" title="Sofia">           
-            </div>
-            <div class="descricao-persona">
-                <ul>
-                    <li>Sofia Pereira - 28 anos</li>
-                    <li>Biologa Marinha - Trabalha em um centro de pesquisa marinha</li>
-                </ul>
+            <div class="carrosel" id="img">               
+                <img src="/public/images/persona-1.png" alt="Foto de uma pessoa afetada" title="Sofia">
+                <img src="/public/images/persona-2.png" alt="Foto de uma pessoa afetada" title="Marina">
+                <img src="/public/images/persona-3.png" alt="Foto de uma pessoa afetada" title="Ricardo">           
             </div>
         </section>
         <section class="impacto-dia" id="impactos">           
@@ -107,22 +103,22 @@
             <div class="blocos">
                 <div class="bloco">
                     <div class="texto">
-                        <h3>Sofia Pereira</h3>
-                        <p>Localização: PE, Recife</p>
-                        <p>Sofia precisa de ferramentas avançadas e dados precisos para monitorar os níveis de poluição e os impactos nas espécies marinhas. Ela quer implementar projetos de conservação eficazes.</p>
+                        <h3 id="nome">Sofia Pereira</h3>
+                        <p id="localizacao">Localização: PE, Recife</p>
+                        <p id="necessidade">Sofia trabalha como biologa marinha e precisa de ferramentas avançadas e dados precisos para monitorar os níveis de poluição e os impactos nas espécies marinhas. Ela quer implementar projetos de conservação eficazes.</p>
                     </div>
                 </div>
                 <div class="bloco">
                     <div class="texto">
                         <h3>Impactos</h3>
-                        <p>Com melhores tecnologias e dados detalhados sobre a qualidade da água, Sofia pode realizar pesquisas mais precisas, contribuindo para a conservação dos oceanos e a proteção da biodiversidade marinha.</p>
+                        <p id="impacto">Com melhores tecnologias e dados detalhados sobre a qualidade da água, Sofia pode realizar pesquisas mais precisas, contribuindo para a conservação dos oceanos e a proteção da biodiversidade marinha.</p>
                     </div>
                 </div>
             </div>          
         </section>
     </main>
 
-    <footer>
+    <footer i>
         <div class="rodape" id="voltar">
             <div class="contato" id="email-contato">
                 <h3>Contato</h3>
@@ -141,11 +137,11 @@
             <div class="email">
                 <h3>Receba novidades no e-mail</h3>
                 <form action="#">
-                    <input type="text" placeholder="Seu email" required>
-                    <button type="submit">Receba novidades no email</button>
+                    <input type="email" placeholder="Seu email"  id="eMail" >
+                    <button type="submit" onclick="verificarEmail()">Receba novidades no email</button>
                 </form>
             </div>
-            <div class="doacao" class = "destaque" id="doacao">
+            <div class="doacao destaque" id="doacao">
                 <h3>Formas de doacao</h3>
                 <div class="formas-doacao">
                     <img src="/public/images/pix-svgrepo-com.png" alt="Logo do pix">

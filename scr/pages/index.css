@@ -1,6 +1,7 @@
 body{
     background-image: linear-gradient(to right, #01C4D8, #016599);
     overflow-x: hidden;
+    width: 100%;
 }
 
 header{
@@ -33,7 +34,7 @@ body a{
 
 nav img{
     margin-top: -2px;
-    width: 100px;
+    width: 120px;
     margin-left: 50px;
 }
 
@@ -76,10 +77,6 @@ nav ul{
     gap: 10px;
     margin-right: 70px;
     font-size: 15px;
-}
-
-.icones img:hover{
-    opacity: 70%;
 }
 
 
@@ -125,12 +122,18 @@ nav ul{
 }
 
 .icones{
-    margin-top: 15px;
+    margin-top: 40px;
     margin-right: 100px;
+    cursor: pointer;
 }
 .icones img{
     width: 30px;
 }
+
+.icones img:hover{
+    opacity: 70%;
+}
+
 
 .problema{
     display: flex;
@@ -261,7 +264,14 @@ figcaption{
 }
 
 .publico{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
     margin-top: 20px;
+    overflow: hidden;
+    height: 400px;
+    width: 400px;
+    
 }
 
 .titulo-publico{
@@ -270,27 +280,20 @@ figcaption{
     color: #202A4E;
 }
 
-.personas{
+.carrosel{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 20px;
-    
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
-.personas img{
-    height: 300px;
-    width: 300px;
+.carrosel img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
 }
 
-.descricao-persona{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.personas img:hover{
+.carrosel img:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
