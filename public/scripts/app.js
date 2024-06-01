@@ -41,5 +41,17 @@ function verificarLogin(){
 }
 
 
+function trocaClasse(id){
+    let secao = document.getElementById(id)
+    secao.classList.remove('problema')
+    secao.classList.add('foco')
+    setTimeout(function(){       
+        secao.classList.remove('foco')
+        secao.classList.add('problema')
+    },1000)
+}
+
+
+
 
 

@@ -16,13 +16,13 @@
             <nav>
                 <img src="/public/images/oc20-logo.png" alt="Logo OC20" class="img-logo">
                 <ul>
-                    <li><a href="#problemas">Problema</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#objetivos">Objetivos</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#publicos">Publico</a></li>
-                    <li><a href="#impactos">Impacto</a></li> 
-                    <li><a href="#doacao">Doacoes</a></li> 
+                    <li><a href="#problemas" onclick="trocaClasse('problemas')">Problema</a></li>
+                    <li><a href="#tecnologias" onclick="trocaClasse('tecnologias')">Tecnologias</a></li>
+                    <li><a href="#objetivos" onclick="trocaClasse('secaoObjetivos')">Objetivos</a></li>
+                    <li><a href="#beneficios" class="problema" onclick="trocaClasse('beneficios')">Beneficios</a></li>
+                    <li><a href="#publicos" onclick="trocaClasse('publicos')">Publico</a></li>
+                    <li><a href="#impactos" onclick="trocaClasse('impactos')">Impacto</a></li> 
+                    <li><a href="#doacao" onclick="trocaClasse('doacao')">Doacoes</a></li> 
                     <li class="linha"></li>
                     <li><a href="/scr/pages/cadastro-login/login.html" id="btn-login">Login</a></li>
                     <li><a href="/scr/pages/cadastro-login/cadastro.html" id="btn">Criar conta</a></li>                        
@@ -61,7 +61,7 @@
 
         <section class="conteudo-objetivos-beneficios" id="objetivos">
             <div class="objetivos">
-                <div class="lista-objetivos">
+                <div class="lista-objetivos" id="secaoObjetivos">
                     <ul>
                         <li>Reducao da poluicao nos oceanos em 40% &#8987;</li>
                         <li>Preservacao da vida marinha &#8987;</li>

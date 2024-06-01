@@ -138,11 +138,6 @@ nav ul{
     text-align: center;
 }
 
-.problema h1{
-    font-family: "Bebas Neue", sans-serif;
-    color: #202A4E;
-    font-weight: bolder;
-}
 
 
 .tecnologias{
@@ -172,6 +167,16 @@ nav ul{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.problema{
+    display: flex;
+    text-align: center;
+}
+
+.problema li{
+    display: flex;
+    text-align: left;
 }
 
 .problema h1{
@@ -399,7 +404,16 @@ footer{
     gap: 5px;
 }
 
+.foco{
+    background-color: rgba(206, 226, 23, 0.219);    
+    transition: background-color 0.5s, color 0.5s;
+}
 
+#problemas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
 
