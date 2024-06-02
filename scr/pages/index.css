@@ -367,6 +367,7 @@ footer a{
     background-color: #087ddc77;
     transition: all 0.3s;
     width: 150px;
+    cursor: pointer;
 }
 
 #btn-doacao:hover {
@@ -418,6 +419,9 @@ footer{
     text-align: center;
 }
 
+.btnEmail{
+    cursor: pointer;
+}
 
 
 

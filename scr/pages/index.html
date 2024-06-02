@@ -28,9 +28,9 @@
                     <li><a href="/scr/pages/cadastro-login/cadastro.html" id="btn">Criar conta</a></li>                        
                 </ul>
                 <div class="icones">
-                    <img src="/public/images/facebook-logo-meta-2-svgrepo-com.png" alt="Sensor de qualidade de agua">
-                    <img src="/public/images/instagram-logo-fill-svgrepo-com.png" alt="Sensor de tempertura de agua">
-                    <img src="/public/images/twitter-logo-fill-svgrepo-com.png" alt="Drone aquatico">
+                    <a href="https://www.facebook.com/fiap/" onclick="trocarPagina('https://www.facebook.com/fiap/')" target="_blank"><img src="/public/images/facebook-logo-meta-2-svgrepo-com.png" alt="Sensor de qualidade de agua"></a>
+                    <a href="https://www.instagram.com/fiapoficial/" onclick="trocarPagina('https://www.instagram.com/fiapoficial/')" target="_blank"><img src="/public/images/instagram-logo-fill-svgrepo-com.png" alt="Sensor de tempertura de agua"></a>
+                    <a href="https://x.com/fiap" onclick="trocarPagina('https://x.com/fiap')" target="_blank"><img src="/public/images/twitter-logo-fill-svgrepo-com.png" alt="Drone aquatico"></a>
                 </div>
             </nav>
         </div>
@@ -129,16 +129,16 @@
             </div>
             <div class="parceiros">
                 <h3>Parceiros</h3>
-                <p><a href="https://www.fiap.com.br/?gad_source=1&gclid=CjwKCAjwx-CyBhAqEiwAeOcTdbAg-dJMtqI-VgiAsBMeRf067xKNrAoGWJBSYSM4yxuUTQz9KmxzDBoCBGcQAvD_BwE" target="_blank">FIAP</a></p>
-                <p><a href="https://www.softtek.com/pt/" target="_blank">Softtek</a></p>
-                <p><a href="https://www.unesco.org/en" target="_blank">Unesco</a></p>
-                <p><a href="https://www.selectsolucoes.com.br/" target="_blank">Sellect solucoes</a></p>
+                <p><a href="https://www.fiap.com.br" target="_blank" onclick="trocarPagina('https://www.fiap.com.br')">FIAP</a></p>
+                <p><a href="https://www.softtek.com/pt/" target="_blank" onclick="trocarPagina('https://www.softtek.com/pt/')">Softtek</a></p>
+                <p><a href="https://www.unesco.org/en" target="_blank" onclick="trocarPagina('https://www.unesco.org/en')">Unesco</a></p>
+                <p><a href="https://www.selectsolucoes.com.br/" target="_blank" onclick="trocarPagina('https://www.unesco.org/en')">Sellect solucoes</a></p>
             </div>
             <div class="email">
                 <h3>Receba novidades no e-mail</h3>
                 <form action="#">
                     <input type="email" placeholder="Seu email"  id="eMail" >
-                    <button type="submit" onclick="verificarEmail()">Receba novidades no email</button>
+                    <button type="submit" onclick="verificarEmail()" class="btnEmail">Receba novidades no email</button>
                 </form>
             </div>
             <div class="doacao destaque" id="doacao">
@@ -149,7 +149,7 @@
                     <img src="/public/images/paypal-140-svgrepo-com.png" alt="Icone Paypal">
                     <img src="/public/images/nubank-svgrepo-com.png" alt="Icone NuBank">
                 </div>
-                <button id="btn-doacao">Doe ja</button>
+                <button id="btn-doacao" onclick="realizarDoacao()">Doe ja</button>
             </div>
         </div>
         <ul>

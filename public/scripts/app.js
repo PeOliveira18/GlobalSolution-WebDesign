@@ -4,6 +4,7 @@ let imgs = document.getElementById('img')
 let img = document.querySelectorAll('#img img')
 let id = 0
 
+
 const pessoas = [
     {
         nome: 'Sofia Pereira',
@@ -24,7 +25,6 @@ const pessoas = [
         impacto: 'A melhoria da qualidade das praias e das águas costeiras atrairá mais turistas, ajudando a expandir seu negócio. Além disso, ao participar de projetos ambientais, Ricardo fortalece a reputação de sua empresa como defensora do meio ambiente.'
     }
 ]
-
 
 
 function realizarCadastro(){
@@ -116,6 +116,17 @@ function verificarEmail(){
     
 }
 
+function realizarDoacao(){
+    if ( localStorage.getItem('Usuario') === null){
+        alert('Para voce realizar uma doacao, e necessario criar uma conta antes!')
+        location.href = '#btn-login'
+    }else{
+        alert('Informacoes sobre doacoes serao enviadas ao seu e-mail!')
+    }
+}
 
+function trocarPagina(link){
+    alert(`Voce sera redirecionado para ${link}`)
+}
 
 
