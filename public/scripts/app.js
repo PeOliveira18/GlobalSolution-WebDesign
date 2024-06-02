@@ -98,6 +98,9 @@ function atualizarTexto(id){
     document.getElementById('impacto').innerText = pessoas[id].impacto
 }
 
+function verificandoEmail(){
+    
+}
 
 function verificarEmail(){
     let emailValido = document.getElementById('eMail').value
@@ -121,6 +124,8 @@ function realizarDoacao(){
         alert('Para voce realizar uma doacao, e necessario criar uma conta antes!')
         location.href = '#btn-login'
     }else{
+        perguntaEmail = prompt('Digite seu email')
+
         alert('Informacoes sobre doacoes serao enviadas ao seu e-mail!')
     }
 }
