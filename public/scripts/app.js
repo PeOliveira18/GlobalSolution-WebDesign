@@ -27,8 +27,7 @@ const pessoas = [
 ]
 
 
-function realizarCadastro(){
-    
+function realizarCadastro(){    
     let novoUsuario = document.getElementById('usuario').value
     let novaSenha = document.getElementById('senha').value
 
@@ -98,10 +97,6 @@ function atualizarTexto(id){
     document.getElementById('impacto').innerText = pessoas[id].impacto
 }
 
-function verificandoEmail(){
-    
-}
-
 function verificarEmail(){
     let emailValido = document.getElementById('eMail').value
 
@@ -120,14 +115,20 @@ function verificarEmail(){
 }
 
 function realizarDoacao(){
-    if ( localStorage.getItem('Usuario') === null){
+    if (localStorage.getItem('Usuario') === null){
         alert('Para voce realizar uma doacao, e necessario criar uma conta antes!')
         location.href = '#btn-login'
     }else{
-        perguntaEmail = prompt('Digite seu email')
-
-        alert('Informacoes sobre doacoes serao enviadas ao seu e-mail!')
-    }
+        let perguntaEmail
+        do{
+            perguntaEmail = prompt('Digite seu e-mail')
+            if (perguntaEmail.includes('.com') && perguntaEmail.includes('@')){
+                alert('Informacoes sobre doacoes serao enviadas ao seu e-mail!')
+            }else{
+                alert('Digite um endereco de email correto!')}
+            
+            }while (!perguntaEmail.includes('.com') || !perguntaEmail.includes('@'))
+}
 }
 
 function trocarPagina(link){
