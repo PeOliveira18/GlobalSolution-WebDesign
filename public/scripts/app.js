@@ -109,6 +109,7 @@ function verificarEmail(){
         
     }else{
         alert('Digite um endereco de e-mail correto')
+        location.href = '#eMail'
         
     }
     
