@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Oliveira">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/public/css/fonts.css">
+    <link rel="stylesheet" href="/public/css/media.css">
+    <title>Ocean Health Tech</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="/public/images/logo.png" alt="Logo OC20" class="img-logo">
+                <ul>
+                    <li><a href="#problemas" onclick="trocaClasse('problemas')">Problema</a></li>
+                    <li><a href="#tecnologias" onclick="trocaClasse('tecnologias')">Tecnologias</a></li>
+                    <li><a href="#objetivos" onclick="trocaClasse('secaoObjetivos')">Objetivos</a></li>
+                    <li><a href="#beneficios" class="problema" onclick="trocaClasse('beneficios')">Beneficios</a></li>
+                    <li><a href="#publicos" onclick="trocaClasse('publicos')">Publico</a></li>
+                    <li><a href="#impactos" onclick="trocaClasse('impactos')">Impacto</a></li> 
+                    <li><a href="#doacao" onclick="trocaClasse('doacao')">Doacoes</a></li> 
+                    <li class="linha"></li>
+                    <li><a href="/scr/pages/cadastro-login/cadastro.html" id="btn">Criar conta</a></li>                        
+                    <li><a href="/scr/pages/cadastro-login/login.html" id="btn-login">Login</a></li>
+                </ul>
+                <div class="icones">
+                    <a href="https://www.facebook.com/fiap/" onclick="trocarPagina('https://www.facebook.com/fiap/')" target="_blank"><img src="/public/images/facebook-logo-meta-2-svgrepo-com.png" alt="Logo Facebook"></a>
+                    <a href="https://www.instagram.com/fiapoficial/" onclick="trocarPagina('https://www.instagram.com/fiapoficial/')" target="_blank"><img src="/public/images/instagram-logo-fill-svgrepo-com.png" alt="Logo Instagram"></a>
+                    <a href="https://x.com/fiap" onclick="trocarPagina('https://x.com/fiap')" target="_blank"><img src="/public/images/twitter-logo-fill-svgrepo-com.png" alt="Logo Twitter"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="problema" id="problemas">          
+            <h1><q>É preocupante saber que ainda não há uma solução definitiva para eliminar com cerca de 8 milhões de toneladas de lixo lançados nos oceanos anualmente</q></h1>
+            <h2>Junte-se ao movimento de Economia Azul ao combate a poluicao dos oceanos.</h2>
+        </section>
+
+        <section class="tecnologias" id="tecnologias">            
+            <h2>A tecnologia pode ajudar os oceanos?</h2>
+            <div class="imagens">
+                <figure>
+                    <img src="/public/images/sensor-agua.jpg" alt="Sensor de qualidade de agua" title="Imagem gerada">
+                    <figcaption>Sensor de qualidade de agua</figcaption>
+                </figure>
+                <figure>
+                    <img src="/public/images/sensor-temperatura.jpg" alt="Sensor de temperatura da agua" title="Imagem gerada">
+                    <figcaption>Sensor de tempertura de agua</figcaption>
+                </figure>
+                <figure>
+                    <img src="/public/images/drone-agua.jpg" alt="Drone aquatico" title="Imagem gerada">
+                    <figcaption>Drone aquatico</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="conteudo-objetivos-beneficios" id="objetivos">
+            <div class="objetivos">
+                <div class="lista-objetivos" id="secaoObjetivos">
+                    <ul>
+                        <li>Reducao da poluicao nos oceanos em 40% &#8987;</li>
+                        <li>Preservacao da vida marinha &#8987;</li>
+                        <li>Conscientizar a população sobre a importância da preservação dos oceanos &#8987; </li>
+                        <li>Captura de dados compreensíveis sobre a saúde dos oceanos &#8987;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icone-direita">
+                <img src="/public/images/right-lg-svgrepo-com.png" alt="Icone de direita">
+            </div>
+            <div class="beneficios" id="beneficios">
+                <div class="texto-beneficios">
+                    <ul>
+                        <li>Dados acessiveis sobre o oceano &#10004;</li>
+                        <li>Aumento da conscientizacao &#10004;</li>
+                        <li>Possibilita melhores politicas de conservacao marinha &#10004;</li>
+                        <li>Suporte a pesquisa cientifica &#10004;</li>
+                        <li>Identificacao de áreas criticas &#10004;</li>
+                        <li>Recuperacao de ecossistemas degradados &#10004;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="publico" id="publicos">
+            <div class="titulo-publico">
+                <h2>Impactos na vida de pessoas</h2>
+            </div>
+            <div class="carrosel" id="img">               
+                <img src="/public/images/persona-1.png" alt="Foto de uma pessoa afetada" title="Sofia">
+                <img src="/public/images/persona-2.png" alt="Foto de uma pessoa afetada" title="Marina">
+                <img src="/public/images/persona-3.png" alt="Foto de uma pessoa afetada" title="Ricardo">           
+            </div>
+        </section>
+        <section class="impacto-dia" id="impactos">           
+            <h2>Dia a Dia modificado</h2>
+            <div class="blocos">
+                <div class="bloco">
+                    <div class="texto">
+                        <h3 id="nome">Sofia Pereira</h3>
+                        <p id="localizacao">Localização: PE, Recife</p>
+                        <p id="necessidade">Sofia trabalha como biologa marinha e precisa de ferramentas avançadas e dados precisos para monitorar os níveis de poluição e os impactos nas espécies marinhas. Ela quer implementar projetos de conservação eficazes.</p>
+                    </div>
+                </div>
+                <div class="bloco">
+                    <div class="texto">
+                        <h3>Impactos</h3>
+                        <p id="impacto">Com melhores tecnologias e dados detalhados sobre a qualidade da água, Sofia pode realizar pesquisas mais precisas, contribuindo para a conservação dos oceanos e a proteção da biodiversidade marinha.</p>
+                    </div>
+                </div>
+            </div>          
+        </section>
+    </main>
+
+    <footer i>
+        <div class="rodape" id="voltar">
+            <div class="contato" id="email-contato">
+                <h3>Contato</h3>
+                <p>oliveirasilvapedro2@gmail.com</p>
+                <p>(19) 3583-8103</p>
+                <p>03694-070</p>
+                <p>Rua Nelson Tartuce  450 - Parque das Paineiras - SP</p>
+            </div>
+            <div class="parceiros">
+                <h3>Parceiros</h3>
+                <p><a href="https://www.fiap.com.br" target="_blank" onclick="trocarPagina('https://www.fiap.com.br')">FIAP</a></p>
+                <p><a href="https://www.softtek.com/pt/" target="_blank" onclick="trocarPagina('https://www.softtek.com/pt/')">Softtek</a></p>
+                <p><a href="https://www.unesco.org/en" target="_blank" onclick="trocarPagina('https://www.unesco.org/en')">Unesco</a></p>
+                <p><a href="https://www.selectsolucoes.com.br/" target="_blank" onclick="trocarPagina('https://www.unesco.org/en')">Sellect solucoes</a></p>
+            </div>
+            <div class="email">
+                <h3>Receba novidades no e-mail</h3>
+                <form action = "">
+                    <input type="email" placeholder="Seu email"  id="eMail" >
+                    <button type="submit" onclick="verificarEmail('eMail')" class="btnEmail">Receba novidades no email</button>
+                </form>
+            </div>
+            <div class="doacao destaque" id="doacao">
+                <h3>Formas de doacao</h3>
+                <div class="formas-doacao">
+                    <img src="/public/images/pix-svgrepo-com.png" alt="Logo do pix">
+                    <img src="/public/images/fatura.png" alt="Icone de boleto">
+                    <img src="/public/images/paypal-140-svgrepo-com.png" alt="Icone Paypal">
+                    <img src="/public/images/nubank-svgrepo-com.png" alt="Icone NuBank">
+                </div>
+                <button id="btn-doacao" onclick="realizarDoacao()">Doe ja</button>
+            </div>
+        </div>
+        <ul>
+            <li class="linha2"></li>
+        </ul>
+        <div class="politicas">
+            <p>Brasil</p>
+            <a href="/scr/pages/politica-termos/privacidade.html">Politicas de Privacidade</a>
+            <a href="/scr/pages/politica-termos/termos.html">Termos de uso</a>
+            <div class="finalizacao">
+                <p>&copy; 2024 Ocean Health Tech. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Pedro Oliveira</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="/public/scripts/app.js"></script>
+</body>
+</html>
