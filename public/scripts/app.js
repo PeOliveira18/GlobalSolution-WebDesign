@@ -88,7 +88,7 @@ function carrosel(){
     
 }
 
-setInterval(carrosel,3800)
+setInterval(carrosel,5000)
 
 function atualizarTexto(id){
     document.getElementById('nome').innerText = pessoas[id].nome
