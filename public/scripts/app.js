@@ -44,7 +44,7 @@ function realizarCadastro(){
     document.getElementById('usuario').value = ''
     document.getElementById('senha').value = ''
 
-    location.href = '/index.html';
+    location.href = '/GlobalSolution-WebDesign/';
 }
 
 
@@ -59,7 +59,7 @@ function verificarLogin(){
         alert('Login efetuado com sucesso')
         document.getElementById('usuarioLogin').value = ''
         document.getElementById('senhaLogin').value = ''
-        location.href = '/index.html'
+        location.href = '/GlobalSolution-WebDesign/'
     }else{
         alert('Nome de usuario ou senha incorretos. Tente novamente')
     } 
