@@ -133,6 +133,8 @@ function realizarDoacao(){
 }
 }
 
+localStorage.clear()
+
 function trocarPagina(link){
     alert(`Voce sera redirecionado para ${link}`)
 }
