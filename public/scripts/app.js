@@ -44,7 +44,7 @@ function realizarCadastro(){
     document.getElementById('usuario').value = ''
     document.getElementById('senha').value = ''
 
-    location.href = '/index.html';
+    location.href = '../../../index.html';
 }
 
 
@@ -59,7 +59,7 @@ function verificarLogin(){
         alert('Login efetuado com sucesso')
         document.getElementById('usuarioLogin').value = ''
         document.getElementById('senhaLogin').value = ''
-        location.href = '/index.html'
+        location.href = '../../../index.html'
     }else{
         alert('Nome de usuario ou senha incorretos. Tente novamente')
     } 
